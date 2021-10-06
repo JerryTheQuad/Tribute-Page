@@ -1,3 +1,7 @@
+body {
+  font-size: calc(0.75em + 1vmin);
+}
+
 #tribute-info {
   text-align: center;
   display: flex;
@@ -12,6 +16,7 @@
   box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
+  border-radius: 35px;
 }
 
 #tribute-info > ul {
@@ -19,13 +24,12 @@
   margin: 0 auto;
   text-align: justify;
   list-style-type: none;
-  line-height: 2em;
+  line-height: 1.56em;
   font-size: 1.3em;
 }
 
 p {
-  text-align: justify;
-  line-height: 2em;
+  line-height: 1.56em;
   font-size: 1.3em;
 }
 
@@ -88,22 +92,28 @@ h2 {
 
 figcaption {
   font-size: 1.3em;
+  margin-left: inherit;
 }
 
 blockquote p {
-  background: #eee;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin: auto;
+  padding: 1vw;
+  margin: 1vw;
 }
 
-@media (max-width: 630px) {
-  blockquote p {
-    margin-left: 5vw;
-    margin-right: 5vw;
+@media only screen and (max-width: 470px) {
+  blockquote {
+    margin: auto;
+    padding: 0.3vw;
   }
 }
 
 ul li a {
   text-decoration: none;
   color: #ececec;
+}
+
+blockquote {
+  background: #e0ffcd;
+  border-radius: 10px;
 }
